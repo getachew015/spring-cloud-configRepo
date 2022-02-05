@@ -1,0 +1,6 @@
+loan:
+  payinfour:
+    maxAmount: 600
+    
+server:
+  port: 8180

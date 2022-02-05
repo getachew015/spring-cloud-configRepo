@@ -25,7 +25,8 @@ management:
         include: "*"
 
 loan:
-  payinfour:
+  paylater:
+    frequency: 4
     maxAmount: 600
     
 server:

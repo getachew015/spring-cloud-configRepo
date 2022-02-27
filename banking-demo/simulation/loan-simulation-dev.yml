@@ -59,7 +59,8 @@ resilience4j:
         recordExceptions:
           - java.net.ConnectException
         ignoreExceptions:
-          - com.dagim.loan.exception.BusinessException        
+          - com.dagim.loan.exception.BusinessException
+          - feign.RetryableException
     instances:
       loanBreaker:
         baseConfig: default

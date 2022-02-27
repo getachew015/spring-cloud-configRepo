@@ -58,9 +58,9 @@ resilience4j:
         waitDurationInOpenState: 5s
         recordExceptions:
           - java.net.ConnectException
+          - feign.RetryableException
         ignoreExceptions:
           - com.dagim.loan.exception.BusinessException
-          - feign.RetryableException
     instances:
       loanBreaker:
         baseConfig: default

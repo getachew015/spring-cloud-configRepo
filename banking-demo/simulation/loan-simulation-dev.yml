@@ -56,6 +56,10 @@ resilience4j:
         permittedNumberOfCallsInHalfOpenState: 3
         automaticTransitionFromOpenToHalfOpenEnabled: true
         waitDurationInOpenState: 5s
+        recordExceptions:
+          - java.net.ConnectException
+        ignoreExceptions:
+          - com.dagim.loan.exception.BusinessException        
     instances:
       loanBreaker:
         baseConfig: default

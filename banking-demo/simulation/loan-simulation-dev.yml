@@ -58,6 +58,7 @@ resilience4j:
         waitDurationInOpenState: 5s
         recordExceptions:
           - java.util.concurrent.TimeoutException
+          - java.net.ConnectException
           - org.springframework.web.client.HttpServerErrorException
           - org.springframework.web.client.HttpServerErrorException.InternalServerError
         ignoreExceptions:

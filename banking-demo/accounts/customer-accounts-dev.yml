@@ -65,6 +65,6 @@ resilience4j:
         ignoreExceptions:
           - com.customer.accounts.exception.BusinessException
     instances:
-      loanBreaker:
+      accountsBreaker:
         baseConfig: default
 

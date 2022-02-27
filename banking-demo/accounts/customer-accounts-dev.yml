@@ -21,6 +21,16 @@ spring:
     console.path: /h2-console
 
 
+accounts:
+  loan:
+    maxAmount: 600
+  checkings:
+    minAmount: 50
+  savings:
+    minAmount: 250
+    
+server:
+  port: 8280
 
 management:
   health:
@@ -58,15 +68,3 @@ resilience4j:
       loanBreaker:
         baseConfig: default
 
-
-
-accounts:
-  loan:
-    maxAmount: 600
-  checkings:
-    minAmount: 50
-  savings:
-    minAmount: 250
-    
-server:
-  port: 8280

@@ -61,7 +61,7 @@ resilience4j:
           - org.springframework.web.client.HttpServerErrorException
           - org.springframework.web.client.HttpServerErrorException.InternalServerError
         ignoreExceptions:
-          - com.customer.accounts.exception.BusinessException
+          - com.dagim.loan.exception.BusinessException
     instances:
       loanBreaker:
         baseConfig: default

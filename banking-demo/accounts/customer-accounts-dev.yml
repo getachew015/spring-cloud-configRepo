@@ -23,7 +23,7 @@ spring:
 
 accounts:
   loan:
-    maxAmount: 600
+    maxAmount: -600
   checkings:
     minAmount: 50
   savings:

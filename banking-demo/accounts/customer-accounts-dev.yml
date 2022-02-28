@@ -31,6 +31,11 @@ accounts:
     
 server:
   port: 8280
+  error:
+    include-exception: false
+    include-message: ALWAYS
+    include-binding-errors: ALWAYS
+    include-stacktrace: ON_PARAM
 
 management:
   health:
@@ -59,6 +64,8 @@ resilience4j:
         automaticTransitionFromOpenToHalfOpenEnabled: true
         waitDurationInOpenState: 5s
         recordExceptions:
+          - feign.RetryableException
+          - java.net.ConnectException
           - java.util.concurrent.TimeoutException
           - org.springframework.web.client.HttpServerErrorException
           - org.springframework.web.client.HttpServerErrorException.InternalServerError

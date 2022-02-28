@@ -24,6 +24,11 @@ loan:
     
 server:
   port: 8180
+  error:
+    include-exception: false
+    include-message: ALWAYS
+    include-binding-errors: ALWAYS
+    include-stacktrace: ON_PARAM
 
 customer-accounts:
   api:

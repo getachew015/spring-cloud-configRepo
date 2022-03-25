@@ -76,3 +76,8 @@ resilience4j:
       accountsBreaker:
         baseConfig: default
 
+springdoc:
+  swagger-ui:
+    path: /swagger-ui/
+
+
